@@ -11,8 +11,8 @@ void main() {
         backgroundColor: Colors.green[600],
         body: Center(
           child: Image(
-              image: NetworkImage(
-                  'https://e7.pngegg.com/pngimages/949/262/png-clipart-sustainability-lifestyle-natural-environment-sustainable-development-ecology-natural-environment-text-logo.png')),
+            image: AssetImage('images/footprint.png'),
+          ),
         ),
       ),
     ),
