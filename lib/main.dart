@@ -19,6 +19,7 @@ class greenerApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -27,15 +28,16 @@ class greenerApp extends StatelessWidget {
               Text(
                 'Aitor Monreal',
                   style: TextStyle(
+                    fontFamily: 'Exo2',
                     color: Colors.teal[50],
-                    fontSize: 20.0,
+                    fontSize: 40.0,
                     fontWeight: FontWeight.bold,
                   )
               ),
 
               Container(
-                height: 400.0,
-                width: 400.0,
+                height: 100.0,
+                width: 100.0,
                 margin: EdgeInsets.all(20.0), // for outside of widget
                 padding: EdgeInsets.all(20.0), // for inside of widget
                 color: Colors.teal[100],
@@ -44,8 +46,8 @@ class greenerApp extends StatelessWidget {
                 ),
               ),
               Container(
-                height: 10.0,
-                width: 10.0,
+                height: 100.0,
+                width: 100.0,
                 margin: EdgeInsets.all(20.0), // for outside of widget
                 padding: EdgeInsets.all(20.0), // for inside of widget
                 color: Colors.teal[100],
