@@ -10,7 +10,7 @@ class _OverviewPageState extends State<OverviewPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sustainability Parameters'),
+        title: Text('Overview'),
         backgroundColor: Colors.blueGrey[900],
       ),
       //backgroundColor: Colors.teal[500],
@@ -41,7 +41,6 @@ class _OverviewPageState extends State<OverviewPage> {
               width: 150.0,
               child: Divider(color: Colors.teal[50]),
             ),
-
           ],
         ),
       ),
