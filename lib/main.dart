@@ -1,86 +1,22 @@
 import 'package:flutter/material.dart';
+import 'input_params_page.dart';
 
-void main() {
-  runApp(greenerApp());
-}
+void main() => runApp(greenerApp());
 
 class greenerApp extends StatelessWidget {
   //const greenerApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Green Dashboard Overview'),
-          backgroundColor: Colors.teal[900],
-        ),
-        backgroundColor: Colors.teal[500],
-        body: SafeArea(
-            child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            CircleAvatar(
-              radius: 50.0,
-              backgroundImage: AssetImage('images/footprint.png'),
-            ),
-            Text(
-              'Aitor Monreal',
-              style: TextStyle(
-                fontFamily: 'Exo2',
-                color: Colors.teal[50],
-                fontSize: 40.0,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            Container(
-              color: Colors.teal[50],
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                //child: Column(
-                  children: <Widget>[
-                    Icon(
-                      Icons.compost,
-                      size: 100.0,
-                      color: Colors.teal[900],
-                    ),
-                    Text(
-                      'Profile',
-                      style: TextStyle(
-                        fontFamily: 'Exo2',
-                        color: Colors.teal[500],
-                        fontSize: 40.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            //),
-            Container(
-              height: 100.0,
-              width: 100.0,
-              margin: EdgeInsets.all(20.0), // for outside of widget
-              padding: EdgeInsets.all(20.0), // for inside of widget
-              color: Colors.teal[100],
-              child: Image(
-                image: AssetImage('images/footprint.png'),
-              ),
-            ),
-            Container(
-              height: 100.0,
-              width: 100.0,
-              margin: EdgeInsets.all(20.0), // for outside of widget
-              padding: EdgeInsets.all(20.0), // for inside of widget
-              color: Colors.teal[100],
-              child: Image(
-                image: AssetImage('images/footprint.png'),
-              ),
-            ),
-          ],
-        )),
+      theme: ThemeData.dark().copyWith(
+          primaryColor: Colors.teal[900],
+          scaffoldBackgroundColor: Colors.teal[900],
+          accentColor: Colors.teal[500],
+          textTheme: TextTheme(
+              bodyText1: TextStyle(color: Colors.teal[50])
+          )
       ),
+      home: InputParamsPage(),
     );
   }
 }
